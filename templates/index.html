@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2> Hello World ! Welcome to Simple Calculator </h2><br>
+    {% block body %}{% endblock %}
+    <h3> Variable 1 : {{val1}} </h3>
+    <h3> Variable 2 : {{val2}} </h3>
+    <h3> Operation : {{operation}} </h3>
+    <h3> Solution  : {{sol}} </h3><br>
+
+    <h2> THANK YOU! </h2>
+</body>
+</html>
